@@ -4,7 +4,7 @@ This installation guide explains how to install the basic software for your 4tro
 
 The ultimate aim is to develop an autonomous (i.e. without human interference) search and rescue robot using the 4tronix M.A.R.S. Rover platform.
 
-The base software is based on the test software provided by 4tronix but then integrated into one total library, called from one control program. One of the main additions is the Ackermann steering geometry so that the wheels turn to the correct position to ensure minimum slippage (Wikipedia for more info). Also the mast position and LED color and behaviour is linked to the driving behaviour.
+The base software is based on the test software provided by 4tronix but then integrated into one total library, called from one separate control program. One of the main additions is the Ackermann steering geometry so that the wheels turn to the correct position to ensure minimum slippage (Wikipedia for more info). Also the mast position and LED color and behaviour is linked to the driving behaviour.
 
 This guide assumes basic knowledge about installing and configuring a Raspberry Pi. For more info visit raspberrypi.com and go to the documentation section.
 
