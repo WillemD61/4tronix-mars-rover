@@ -2,7 +2,9 @@
 
 This installation guide explains how to install the basic software for your 4tronix M.A.R.S. Rover on a Raspberry Pi Zero so you can then manually control it from a PC/laptop. Future additions are described at the end.
 
-The software is based on the test software provided by 4tronix but then integrated into one total library, called from one control program. One of the main additions is the Ackermann steering geometry so that the wheels turn to the correct position to ensure minimum slippage (Wikipedia for more info). Also the mast position and LED color and behaviour is linked to the driving behaviour.
+The ultimate aim is to develop an autonomous (i.e. without human interference) search and rescue robot using the 4tronix M.A.R.S. Rover platform.
+
+The base software is based on the test software provided by 4tronix but then integrated into one total library, called from one control program. One of the main additions is the Ackermann steering geometry so that the wheels turn to the correct position to ensure minimum slippage (Wikipedia for more info). Also the mast position and LED color and behaviour is linked to the driving behaviour.
 
 This guide assumes basic knowledge about installing and configuring a Raspberry Pi. For more info visit raspberrypi.com and go to the documentation section.
 
@@ -28,12 +30,15 @@ Note the following changes have been applied to the 4tronix setup:
 12)	After the calibration you can attach the wheels to the motors.
 13)	Now you can run “sudo python3 manualcontrol.py” to drive and control your M.A.R.S Rover using the keyboard of your PC/laptop. The lights and mast will follow the movements. Note that obstacle detection is active and the Rover will therefore stop (and show red brakelights) if an obstacle is detected ahead. The keys to control your M.A.R.S Rover are shown on screen.
 
-Have fun !!!   
+# Have fun !!!   
 
 # Further development
 
-Further development has been done but has not been published yet. 
-Expected to be published in the near future:
+Some further development has been done but has not been published yet. 
+
+The ultimate aim is to develop an autonomous (i.e. without human interference) search and rescue robot. Step 1 to 5 below were already succesfully implemented on the Raspberry Pi Zero, but during further development it was found that the Raspberry Pi Zero is too heavily loaded if all functions need to be performed on the Raspberry Pi, so the plan now it to develop communication between the Raspberry Pi and a laptop so some higher level functions can then be offloaded to the laptop.
+
+To be published in the near future:
 1) More high level controls, such as "drive straight" and "drive arc" functions.
 2) Color and object recognition using the camera.
 3) Navigation using the camera.
